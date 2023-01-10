@@ -1,0 +1,10 @@
+@import "../../../shared/styles/colors";
+
+.BannerSection {
+	padding: 32px 20px;
+	background-color: $text-color;
+
+	p {
+		color: $white;
+	}
+}

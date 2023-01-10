@@ -1,0 +1,29 @@
+@import "../../../shared/styles/mixins";
+
+.HomeNav {
+	margin: 49px 16px 15px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 8px;
+	gap: 56px;
+	height: 56px;
+
+	border-radius: 16px;
+
+	background: rgba(255, 255, 255, 0.4);
+
+	div:nth-child(1) {
+		flex: 3;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+
+		button:nth-child(2) {
+			margin-left: 1.2rem;
+		}
+	}
+}

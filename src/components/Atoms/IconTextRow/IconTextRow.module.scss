@@ -1,0 +1,11 @@
+.IconTextRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		flex: 3;
+		padding-left: 16px;
+	}
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Cormorant:wght@700&display=swap");
+
+:root {
+	font-family: "Archivo", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	--text-color: #242867;
+	--highlight-color: #73008c;
+	--background-color: #d4d6ef;
+	--white: #ffffff;
+	--background-color-secondary: #ececec;
+
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+.archivo {
+	font-family: "Archivo", sans-serif;
+}
+
+.cormorant {
+	font-family: "Cormorant", serif;
+}
+
+.p10 {
+	padding: 10px;
+}
+
+.p10-0 {
+	padding: 10px 0;
+}
+
+a {
+	font-weight: 800;
+	color: var(--highlight-color);
+	text-decoration: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 48px;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 38px;
+	margin-bottom: 24px;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 28px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Cormorant", serif;
+	font-weight: 700;
+	letter-spacing: 2%;
+}
+
+p {
+	color: var(--text-color);
+	font-family: "Archivo", serif;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 3%;
+}
+p.secondary {
+	color: var(--white);
+}
+p.semi-bold {
+	font-weight: 600;
+}
