@@ -1,9 +1,15 @@
 @import "../../../shared/styles/colors";
+@import "../../../shared/styles/shadows";
 
 .ValuesCard {
 	margin: 16px;
 	padding: 20px;
 	background: $white;
+	box-shadow: $card-shadow;
 
 	border-radius: 16px;
+
+	h2 {
+		padding-left: 0;
+	}
 }

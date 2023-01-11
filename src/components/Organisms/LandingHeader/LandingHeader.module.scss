@@ -1,0 +1,22 @@
+.LandingHeader {
+	padding: 16px;
+
+	.box {
+		overflow-y: hidden;
+
+		h2 {
+			margin: 0;
+			padding: 0;
+			animation: text-appear 1.5s cubic-bezier(0.35, 0.62, 0, 0.9) forwards;
+		}
+	}
+}
+
+@keyframes text-appear {
+	0% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
