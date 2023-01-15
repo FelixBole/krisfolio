@@ -2,11 +2,12 @@ import Styles from "./Logo.module.scss";
 
 type LogoProps = {
 	size?: number;
+	onclick?: () => any;
 };
 
-export const Logo = ({ size = 85 }: LogoProps) => {
+export const Logo = ({ size = 85, onclick = () => {} }: LogoProps) => {
 	return (
-		<div className={Styles.Logo}>
+		<div className={Styles.Logo} onClick={onclick}>
 			<svg
 				width={size}
 				height={size}

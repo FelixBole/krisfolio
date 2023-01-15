@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { RoundedImage } from "../../Atoms/RoundedImage/RoundedImage";
 import { Tag } from "../../Atoms/Tag/Tag";
 import Styles from "./ProjectCard.module.scss";
@@ -19,15 +20,24 @@ export const ProjectCard = ({
 	imgAlt,
 	onclick = () => {},
 }: ProjectCardProps) => {
+	const navigate = useNavigate();
+
 	return (
-		<div className={Styles.ProjectCard} onClick={() => {}}>
+		<div
+			className={Styles.ProjectCard}
+			onClick={() => {
+				navigate(`/projects/${number}`);
+			}}
+		>
 			<div className={Styles.header}>
 				<h3>{title}</h3>
 				<span>{number}</span>
 			</div>
 			<div className={Styles.tags}>
 				{tags.map((tag, idx) => (
-					<Tag isFirst={idx === 0}>{tag}</Tag>
+					<Tag key={tag} isFirst={idx === 0}>
+						{tag}
+					</Tag>
 				))}
 			</div>
 			<RoundedImage src={imgSrc} alt={imgAlt} />

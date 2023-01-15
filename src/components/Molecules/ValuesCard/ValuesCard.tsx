@@ -8,12 +8,8 @@ export const ValuesCard = (props: ValuesCardProps) => {
 		<div className={Styles.ValuesCard}>
 			<h2>My values</h2>
 			<div className={Styles.icons}>
-				<IconTextRow icon="MessageCircle">
-					Good communication is key
-				</IconTextRow>
-				<IconTextRow icon="Accessibility">
-					Accessibility is usability for all
-				</IconTextRow>
+				<IconTextRow icon="MessageCircle">Communication</IconTextRow>
+				<IconTextRow icon="Accessibility">Accessibility</IconTextRow>
 				<IconTextRow icon="LayoutGrid">Design system lover</IconTextRow>
 				<IconTextRow icon="User">User centric</IconTextRow>
 			</div>

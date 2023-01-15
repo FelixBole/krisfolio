@@ -1,0 +1,31 @@
+@import "../../shared/styles/colors";
+.ProjectPage {
+	.top {
+		padding: 20px;
+	}
+
+	h1 {
+		padding-left: 0;
+	}
+
+	h3 {
+		width: 100%;
+		border-bottom: 1px solid $text-color;
+		margin-bottom: 24px;
+	}
+
+	.mid {
+		margin-top: 32px;
+		background: $text-color;
+		color: $white;
+
+		.midContent {
+			padding: 20px;
+		}
+
+		h3 {
+			border-bottom: 1px solid $white;
+			padding-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import "../../../shared/styles/colors";
+
+.ExpandableInfo {
+	.header {
+		border-bottom: 1px solid $text-color;
+		padding-bottom: 5px;
+		display: flex;
+		align-items: baseline;
+		margin: 16px 0;
+
+		h3 {
+			flex: 4;
+			border: none;
+			margin: 0;
+		}
+
+		.spans {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.number {
+			padding-bottom: 5px;
+			font-size: 1.1rem;
+		}
+
+		.chevron {
+			cursor: pointer;
+			transition: all 0.1s linear;
+			padding-bottom: 5px;
+
+			@media (min-width: 600px) {
+				&:hover {
+					transform: rotate(10deg);
+				}
+			}
+
+			&Clicked {
+				transform: rotate(180deg);
+
+				@media (min-width: 600px) {
+					&:hover {
+						transform: rotate(170deg);
+					}
+				}
+			}
+		}
+	}
+
+	.content {
+		overflow: hidden;
+		max-height: 0;
+		transition: all 0.2s linear;
+
+		&Visible {
+			max-height: 400px;
+		}
+	}
+}
+
+.secondary {
+	color: $white !important;
+
+	.header {
+		border-bottom: 1px solid $white;
+		h3 {
+			border: none !important;
+		}
+	}
+
+	.content {
+		p {
+			color: $white;
+		}
+	}
+}
