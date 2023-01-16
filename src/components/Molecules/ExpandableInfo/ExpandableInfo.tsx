@@ -30,7 +30,7 @@ export const ExpandableInfo = ({
 				secondary ? Styles.secondary : ""
 			}`}
 		>
-			<div className={Styles.header}>
+			<div className={Styles.header} onClick={() => handleChevronClick()}>
 				<h3>{title}</h3>
 				<span className={Styles.spans}>
 					<span className={Styles.number}>{idx}</span>
@@ -38,7 +38,6 @@ export const ExpandableInfo = ({
 						className={`${Styles.chevron} ${
 							expanded ? Styles.chevronClicked : ""
 						}`}
-						onClick={() => handleChevronClick()}
 					>
 						{<ChevronUp />}
 					</span>

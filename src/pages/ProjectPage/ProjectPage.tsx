@@ -56,6 +56,7 @@ export const ProjectPage = () => {
 					</div>
 				</div>
 			</div>
+			<div className={Styles.bottom}>{project.details}</div>
 		</div>
 	);
 };

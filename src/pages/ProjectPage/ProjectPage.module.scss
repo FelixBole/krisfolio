@@ -1,7 +1,7 @@
 @import "../../shared/styles/colors";
 .ProjectPage {
 	.top {
-		padding: 20px;
+		padding: 16px;
 	}
 
 	h1 {
@@ -26,6 +26,14 @@
 		h3 {
 			border-bottom: 1px solid $white;
 			padding-bottom: 10px;
+		}
+	}
+
+	.bottom {
+		padding: 16px;
+
+		h3 {
+			border-bottom: none;
 		}
 	}
 }
