@@ -1,22 +1,23 @@
-import { RoundedImage } from "../../Atoms/RoundedImage/RoundedImage";
 import { Project } from "../Projects";
 
 import p2_img from "../../../assets/img/projects/p2.png";
 import agent_tool from "../../../assets/img/projects/p2/agent_too_dashboard.png";
 import flow_manager from "../../../assets/img/projects/p2/flow_manager.png";
+import sorting_cards from "../../../assets/img/projects/p2/2_sorting_cards.png";
+import { DetailsImage } from "../../Atoms/DetailsImage/DetailsImage";
 
 const Details = () => {
 	return (
 		<>
 			<h3>Contracts tab : User Test on PDL</h3>
-			<RoundedImage src="" alt="" />
+			<DetailsImage src={agent_tool} alt="Agent tool" />
 			<h3>Given scenario</h3>
 			<p>
 				A client you contact because he has constant power outages in his home,
 				what do you say?
 			</p>
 			<h3>Flow Manager tab: Sorting cards</h3>
-			<RoundedImage src={agent_tool} alt="Agent tool" />
+			<DetailsImage src={sorting_cards} alt="Sorting Cards" />
 			<p>
 				Created in order to discover how my users classify the different labels
 				of their profession in order to prioritize those that will be displayed
@@ -27,7 +28,7 @@ const Details = () => {
 				very important to important steps.
 			</p>
 			<h3>Personae</h3>
-			<div className="projectDetailsCardText">
+			<div className="projectDetailsTextCard">
 				<h6>Thomas Bonaparti</h6>
 				<p>Client manager</p>
 				<br />
@@ -58,7 +59,7 @@ const Details = () => {
 				necessary. Here is what emerged from previous research.
 			</p>
 			<h3>Prototype</h3>
-			<RoundedImage src={flow_manager} alt={"Flow manager"} />
+			<DetailsImage src={flow_manager} alt={"Flow manager"} />
 		</>
 	);
 };

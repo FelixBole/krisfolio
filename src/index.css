@@ -90,3 +90,13 @@ p.secondary {
 p.semi-bold {
 	font-weight: 600;
 }
+
+.projectDetails h6 {
+	margin: 0;
+}
+
+.projectDetailsTextCard {
+	background: var(--white);
+	padding: 16px;
+	border-radius: 16px;
+}

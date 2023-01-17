@@ -28,3 +28,15 @@ export const projects: Project[] = [p1, p2, p3, p4, p5, p6];
 export const getProjectById = (id: string) => {
 	return projects.find((p) => p.id === id);
 };
+
+export const getNextProject = (id: string) => {
+	const curr = projects.findIndex((p) => p.id === id);
+	if (curr === -1 || curr + 1 === projects.length) return projects[0];
+	return projects[curr + 1];
+};
+
+export const getPreviousProject = (id: string) => {
+	const curr = projects.findIndex((p) => p.id === id);
+	if (curr === -1 || curr - 1 === -1) return projects[projects.length - 1];
+	return projects[curr - 1];
+};

@@ -1,9 +1,21 @@
 import p4_img from "../../../assets/img/projects/p4.png";
 import { Project } from "../Projects";
 
+import research from "../../../assets/img/projects/p4/1_research.png";
+import menu_opened from "../../../assets/img/projects/p4/2_menu_opened.png";
+import selling_category from "../../../assets/img/projects/p4/3_selling_category.png";
+import mobile_1 from "../../../assets/img/projects/p4/4_mobile_1.png";
+import mobile_2 from "../../../assets/img/projects/p4/5_mobile_2.png";
+import mobile_3 from "../../../assets/img/projects/p4/6_mobile_3.png";
+import menu_desktop from "../../../assets/img/projects/p4/7_menu_desktop.png";
+import tailoring from "../../../assets/img/projects/p4/8_tailoring.png";
+import { DetailsImage } from "../../Atoms/DetailsImage/DetailsImage";
+import { DetailsFlexImageContainer } from "../../Molecules/DetailsFlexImageContainer/DetailsFlexImageContainer";
+
 const Details = () => {
 	return (
 		<>
+			<h3>Personae</h3>
 			<div className="projectDetailsTextCard">
 				<h6>Edouard Delayette</h6>
 				<p>Trader</p>
@@ -53,7 +65,36 @@ const Details = () => {
 					version of the site and an English version for anglophones who wish to
 					buy on the site.
 				</li>
+				<li>
+					A list of articles already consulted by the user make the experience
+					personalized for each user, it is a great advantage in the loyalty he
+					will experience. This could be a shortcut for him and it will decrease
+					the cognitive load.
+				</li>
+				<li>
+					Keep the spirit of a minimalist design to facilitate the cognitive
+					load of the user, giving him only the information that is useful to
+					avoid unnecessary sentences and words.
+				</li>
+				<li>
+					Make suggestions to the user when he is wrong when entering the email
+					address in addition to the message "Enter a valid email address" If he
+					forgets the arobase, tell him "You forgot the@" for example.
+				</li>
+				<li>
+					Keep the "Frequently Asked Questions" in the footer but remove it from
+					the navigation bar to avoid redundancy.
+				</li>
 			</ul>
+			<h3>Wireframe</h3>
+			<DetailsImage src={research} alt="Research" />
+			<DetailsImage src={menu_opened} alt="Menu opened" />
+			<DetailsImage src={selling_category} alt="Selling category" />
+			<DetailsFlexImageContainer>
+				<DetailsImage src={mobile_1} alt="Research" />
+				<DetailsImage src={mobile_2} alt="Research" />
+				<DetailsImage src={mobile_3} alt="Research" />
+			</DetailsFlexImageContainer>
 		</>
 	);
 };

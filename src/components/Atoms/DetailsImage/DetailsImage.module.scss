@@ -1,0 +1,17 @@
+.DetailsImage {
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 600px) {
+		margin: 5px 24px;
+	}
+
+	img {
+		max-width: 700px;
+		width: 160px;
+		height: 324px;
+		object-fit: contain;
+	}
+}

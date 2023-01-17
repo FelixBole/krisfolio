@@ -6,16 +6,18 @@ import screen1 from "../../../assets/img/projects/p3/screen_1.png";
 import screen2 from "../../../assets/img/projects/p3/screen_2.png";
 import screen3 from "../../../assets/img/projects/p3/screen_3.png";
 import screen4 from "../../../assets/img/projects/p3/screen_4.png";
+import { DetailsImage } from "../../Atoms/DetailsImage/DetailsImage";
+import { DetailsFlexImageContainer } from "../../Molecules/DetailsFlexImageContainer/DetailsFlexImageContainer";
 
 const Details = () => {
 	return (
 		<>
-			<div className="flexImages">
-				<RoundedImage src={screen1} alt="Example screen" />
-				<RoundedImage src={screen2} alt="Example screen" />
-				<RoundedImage src={screen3} alt="Example screen" />
-				<RoundedImage src={screen4} alt="Example screen" />
-			</div>
+			<DetailsFlexImageContainer>
+				<DetailsImage src={screen1} alt="Example screen" />
+				<DetailsImage src={screen2} alt="Example screen" />
+				<DetailsImage src={screen3} alt="Example screen" />
+				<DetailsImage src={screen4} alt="Example screen" />
+			</DetailsFlexImageContainer>
 		</>
 	);
 };

@@ -1,11 +1,25 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { Button } from "../../components/Atoms/Button/Button";
 import { RoundedImage } from "../../components/Atoms/RoundedImage/RoundedImage";
-import { getProjectById } from "../../components/Data/Projects";
+import {
+	getNextProject,
+	getPreviousProject,
+	getProjectById,
+	Project,
+} from "../../components/Data/Projects";
 import { ExpandableInfo } from "../../components/Molecules/ExpandableInfo/ExpandableInfo";
 import Styles from "./ProjectPage.module.scss";
 
 export const ProjectPage = () => {
 	const { id } = useParams();
+	const navigate = useNavigate();
+
+	const goToProject = (where: "previous" | "next") => {
+		if (!id) return;
+		const target =
+			where === "next" ? getNextProject(id) : getPreviousProject(id);
+		navigate(`/projects/${target.id}`);
+	};
 
 	if (!id) return <>ID non reconnu</>;
 
@@ -57,6 +71,10 @@ export const ProjectPage = () => {
 				</div>
 			</div>
 			<div className={Styles.bottom}>{project.details}</div>
+			<div className={Styles.controls}>
+				<Button onclick={() => goToProject("previous")}>Previous</Button>
+				<Button onclick={() => goToProject("next")}>Next</Button>
+			</div>
 		</div>
 	);
 };

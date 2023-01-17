@@ -1,4 +1,7 @@
 import p5_img from "../../../assets/img/projects/p5.png";
+import { DetailsImage } from "../../Atoms/DetailsImage/DetailsImage";
+import { DetailsFlexImageContainer } from "../../Molecules/DetailsFlexImageContainer/DetailsFlexImageContainer";
+import { DetailsTextCard } from "../../Molecules/DetailsTextCard/DetailsTextCard";
 import { Project } from "../Projects";
 
 const Details = () => {
@@ -31,6 +34,60 @@ const Details = () => {
 				</p>
 			</div>
 			<h3>Roadmap - Prioritization by sizing</h3>
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "space-between",
+					flexWrap: "wrap",
+				}}
+			>
+				<DetailsTextCard>
+					<h6>XL</h6>
+					<p>Keep users on the site with a map accessible from the homepage.</p>
+				</DetailsTextCard>
+				<DetailsTextCard>
+					<h6>XL</h6>
+					<p>Help users easily search for an address.</p>
+				</DetailsTextCard>
+				<DetailsTextCard>
+					<h6>L</h6>
+					<p>Improve search speed with enhanced filters</p>
+				</DetailsTextCard>
+				<DetailsTextCard>
+					<h6>M</h6>
+					<p>Improve site loading speed to address frustration</p>
+				</DetailsTextCard>
+			</div>
+			<DetailsImage src={""} alt={"Product roadmap"} />
+			<DetailsFlexImageContainer>
+				<DetailsImage src={""} alt="Example screen" />
+				<DetailsImage src={""} alt="Example screen" />
+				<DetailsImage src={""} alt="Example screen" />
+				<DetailsImage src={""} alt="Example screen" />
+			</DetailsFlexImageContainer>
+			<h3>Lessons</h3>
+			<DetailsTextCard fullWidth={true}>
+				<h6>1</h6>
+				<p>
+					It was enough to improve the input and make it interactive to no
+					longer have the problem of retention and abandonment on the homepage.
+				</p>
+			</DetailsTextCard>
+			<DetailsTextCard fullWidth={true}>
+				<h6>2</h6>
+				<p>
+					All users were able to make the journey quickly. Filters were noticed
+					and applied.
+				</p>
+			</DetailsTextCard>
+			<DetailsTextCard fullWidth={true}>
+				<h6>3</h6>
+				<p>
+					Iterating my tests allowed me to see if the problem and the solution
+					were correct of not. (for example, adding a button that ultimately was
+					not used).
+				</p>
+			</DetailsTextCard>
 		</>
 	);
 };

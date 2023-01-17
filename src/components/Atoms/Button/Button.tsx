@@ -13,5 +13,9 @@ export const Button = ({
 		if (onclick) onclick(e);
 	};
 
-	return <button className={Styles.Button}>{children}</button>;
+	return (
+		<button className={Styles.Button} onClick={(e) => handleClick(e)}>
+			{children}
+		</button>
+	);
 };

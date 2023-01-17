@@ -1,16 +1,16 @@
-import { RoundedImage } from "../../Atoms/RoundedImage/RoundedImage";
 import { Project } from "../Projects";
 
 import p1_img from "../../../assets/img/projects/p1.png";
 import first from "../../../assets/img/projects/p1/first_mvp.png";
 import second from "../../../assets/img/projects/p1/second_mvp.png";
 import admin_crm from "../../../assets/img/projects/p1/admin_crm.png";
+import { DetailsImage } from "../../Atoms/DetailsImage/DetailsImage";
 
 const Details = () => {
 	return (
 		<>
 			<h3>First MVP</h3>
-			<RoundedImage src={first} alt={"First MVP"} />
+			<DetailsImage src={first} alt={"First MVP"} />
 			<p>
 				Here the client arrives after his onboarding, this is a sequence of the
 				next steps that await him before finalizing his file and financing. The
@@ -49,7 +49,7 @@ const Details = () => {
 				It was an instructive failure! it's also why I tried to solve problems.
 			</p>
 			<h3>Second MVP</h3>
-			<RoundedImage src={second} alt={"Second MVP"} />
+			<DetailsImage src={second} alt={"Second MVP"} />
 			<p>After brainstorming with the PM, here are the improvements</p>
 			<ul>
 				<li>
@@ -71,7 +71,7 @@ const Details = () => {
 				</li>
 			</ul>
 			<h3>Intern software</h3>
-			<RoundedImage src={admin_crm} alt={"Intern software"} />
+			<DetailsImage src={admin_crm} alt={"Intern software"} />
 			<p>
 				This software is for internal teams like sales or Ops that take care of
 				users. Here, the agents can send needed files directly to the client
